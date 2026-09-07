@@ -1,0 +1,20 @@
+.add-book-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.book-form__input {
+    flex: 1;
+}
+
+/* Стили для формы */
+@media (max-width: 480px) {
+    .add-book-row {
+        flex-direction: column;
+    }
+    
+    .add-book-row .btn {
+        width: 100%;
+    }
+}

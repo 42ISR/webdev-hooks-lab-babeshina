@@ -1,0 +1,98 @@
+.session-card {
+    background: var(--bg-card);
+    border: 2px solid var(--bg-main);
+    border-radius: var(--radius-sm);
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.session-card:hover {
+    border-color: var(--primary-light);
+}
+
+.session-title {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--primary);
+    margin: 0 0 4px;
+}
+
+.session-sub {
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    margin: 0 0 20px;
+}
+
+.counter-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.counter-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid var(--bg-main);
+    background: var(--bg-card);
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-dim);
+    transform: scale(1.05);
+}
+
+.counter-btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.counter-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.counter-value {
+    font-family: var(--font-mono);
+    font-size: 32px;
+    font-weight: 600;
+    min-width: 60px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.counter-reset {
+    display: block;
+    margin: 0 auto;
+    min-width: 140px;
+}
+
+@media (max-width: 480px) {
+    .session-card {
+        padding: 16px;
+    }
+    
+    .counter-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+    
+    .counter-value {
+        font-size: 26px;
+        min-width: 50px;
+    }
+}

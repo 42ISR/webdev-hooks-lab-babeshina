@@ -1,0 +1,15 @@
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.empty-note {
+    color: var(--text-muted);
+    font-size: 14px;
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px dashed var(--bg-hover);
+    border-radius: var(--radius-sm);
+    background: var(--bg-main);
+}

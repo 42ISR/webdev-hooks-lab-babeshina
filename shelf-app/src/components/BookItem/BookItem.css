@@ -1,0 +1,98 @@
+.book-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: var(--bg-card);
+    border: 2px solid var(--bg-main);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.book-row:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 12px rgba(246, 76, 114, 0.08);
+    transform: translateX(4px);
+}
+
+.book-cover {
+    width: 40px;
+    height: 54px;
+    border-radius: 6px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.book-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.book-title {
+    font-family: var(--font-display);
+    font-size: 15px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-primary);
+}
+
+.book-title.done {
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.book-author {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.read-check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.read-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+.read-check:hover .read-label {
+    color: var(--accent);
+}
+
+.delete-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 16px;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.delete-btn:hover {
+    color: white;
+    background: var(--accent);
+    transform: rotate(90deg);
+}
